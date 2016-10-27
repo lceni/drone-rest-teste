@@ -20,7 +20,9 @@ Faça uma cópia local deste repositório, em seguida, execute os passos abaixo,
      cd drone
      gradlew test
 
-**Para gerar um WAR:**
+**Para gerar um WAR:**  
+*O arquivo WAR gerado estará disponível em drone-rest-teste/drone/build/libs/drone.war*  
+*Utilize este arquivo para fazer deploy em seu servidor de aplicação favorito (Tomcat, Jetty, Wildfly, Glassfish, etc)*
 
      cd drone
      gradlew war
