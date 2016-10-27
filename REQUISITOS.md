@@ -17,23 +17,23 @@ Desenvolva um sistema que permita aos operadores controlar a posição dos drone
 
 ###As seguintes interfaces devem estar disponíveis:###
 
-POST /drone/api/move  
+**POST /drone/api/move**  
 Move o drone 1 metro para frente
 
-POST /drone/api/left  
+**POST /drone/api/left**  
 Gira o drone em seu eixo para a esquerda
 
-POST /drone/api/right  
+**POST /drone/api/right**  
 Gira o drone em seu eixo para a direita
 
-POST /drone/api/bulk  
-Data: ['L', 'L', 'M', 'M', 'M', 'R', 'M']  
+**POST /drone/api/bulk**  
+*Data: ['L', 'L', 'M', 'M', 'M', 'R', 'M']*  
 Movimenta o drone com comandos em lote.  
 L = Gira o drone em seu eixo para a esquerda  
 R = Gira o drone em seu eixo para a direita  
 M = Move o drone 1 metro para frente
 
-GET /drone/api/status  
+**GET /drone/api/status**  
 Response: {'x': 15, 'y': 15, 'facing': 'N'}  
 Retorna a situação do drone sendo:  
 x = Posição no eixo X  
